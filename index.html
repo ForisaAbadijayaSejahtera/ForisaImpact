@@ -1,179 +1,67 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forisa Impact — PT Forisa Abadijaya Sejahtera</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #eef2f7 0%, #ffffff 70%);
-      color: #1f2937;
-    }
-
-    nav {
-      padding: 16px 24px;
-      background: rgba(255,255,255,0.9);
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      color: #0f172a;
-      cursor: pointer;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .page-section {
-      display: none;
-      padding: 48px 24px;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    .page-section.active {
-      display: block;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 16px;
-      color: #0f172a;
-    }
-
-    h3 {
-      margin-top: 28px;
-      color: #0f172a;
-    }
-
-    p {
-      font-size: 17px;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #0f766e;
-      color: #ffffff;
-      border: none;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 14px;
-      color: #475569;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forisa Impact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-  <a onclick="showSection('about')">Tentang Kami</a>
-  <a onclick="showSection('services')">Pelayanan Kami</a>
-  <a onclick="showSection('consultation')">Konsultasi Awal</a>
-  <a onclick="showSection('company')">Company Profile</a>
+<header class="header">
+  <div class="header-inner">
+    <img src="logo.png" alt="Forisa Logo" class="logo">
+
+    <div class="header-text">
+      <h1>PT Forisa Abadijaya Sejahtera</h1>
+      <p>Membantu Organisasi Bertumbuh Lewat SDM yang Selaras</p>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="#" data-target="tentang">Tentang Kami</a>
+  <a href="#" data-target="layanan">Pelayanan Kami</a>
+  <a href="#" data-target="konsultasi">Konsultasi Awal</a>
 </nav>
 
-<!-- TENTANG KAMI -->
-<section id="about" class="page-section active">
-  <h1>PT Forisa Abadijaya Sejahtera</h1>
-  <p><b>Membantu Organisasi Bertumbuh Lewat SDM yang Selaras</b></p>
+<main>
+  <section id="tentang" class="page-section active">
+    <!-- ISI TENTANG KAMI — PASTE ISI LO DI SINI -->
+  </section>
 
-  <p>
-    Banyak pemilik usaha hari ini sebenarnya tidak kekurangan peluang.
-    Yang sering jadi ganjalan justru hal yang paling dekat: manusia di dalam organisasinya sendiri.
-  </p>
+  <section id="layanan" class="page-section">
+    <!-- ISI PELAYANAN KAMI — PASTE ISI LO DI SINI -->
+  </section>
 
-  <p>
-    PT Forisa Abadijaya Sejahtera berdiri pada tahun 2022, berangkat dari pengalaman nyata
-    di dunia outsourcing dan pengelolaan SDM.
-  </p>
-</section>
+  <section id="konsultasi" class="page-section">
+    <p>Silakan ajukan konsultasi awal untuk mendiskusikan kebutuhan organisasi Anda.</p>
+    <button id="btnKonsultasi">Ajukan Konsultasi</button>
+  </section>
+</main>
 
-<!-- PELAYANAN -->
-<section id="services" class="page-section">
-  <h1>Pelayanan Kami</h1>
-
-  <h3>HR Diagnostic</h3>
-  <p>Pemetaan kondisi nyata organisasi untuk menemukan akar persoalan SDM.</p>
-
-  <h3>HR System Development</h3>
-  <p>Penyusunan sistem SDM yang relevan, sederhana, dan dijalankan.</p>
-
-  <h3>Leadership Coaching</h3>
-  <p>Pendampingan pemimpin agar mampu mengambil keputusan jernih dan menggerakkan tim.</p>
-
-  <h3>HR Retainer / Pendampingan</h3>
-  <p>Pendampingan berkelanjutan untuk menjaga sistem tetap berjalan konsisten.</p>
-</section>
-
-<!-- KONSULTASI -->
-<section id="consultation" class="page-section">
-  <h1>Konsultasi Awal</h1>
-  <p>
-    Untuk diskusi awal dan penjadwalan konsultasi, silakan hubungi kami melalui WhatsApp.
-  </p>
-
-  <button onclick="openWA()">Ajukan Konsultasi</button>
-</section>
-
-<!-- COMPANY PROFILE -->
-<section id="company" class="page-section">
-  <h1>Company Profile</h1>
-  <h3>PT Forisa Abadijaya Sejahtera</h3>
-
-  <p>
-    Forisa adalah mitra strategis bagi organisasi yang ingin bertumbuh
-    melalui penataan SDM, sistem, dan kepemimpinan yang selaras dengan arah bisnis.
-  </p>
-
-  <p>
-    Pendekatan kami mengikuti alur yang sehat dan berkelanjutan:
-    <b>melihat dengan jernih → menata dengan tepat → memperkuat pemimpin → menjaga keberlangsungan</b>.
-  </p>
-
-  <button onclick="window.open('Company-Profile-PT-Forisa-Abadijaya-Sejahtera.pdf')">
-    Unduh Company Profile (PDF)
-  </button>
-</section>
-
-<footer>
+<footer class="footer">
   © 2026 Forisa Impact — PT Forisa Abadijaya Sejahtera
 </footer>
 
 <script>
-  function showSection(id) {
-    const sections = document.querySelectorAll('.page-section');
-    sections.forEach(sec => sec.classList.remove('active'));
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
 
-    const target = document.getElementById(id);
-    if (target) target.classList.add('active');
-  }
+    document.querySelectorAll('.page-section')
+      .forEach(sec => sec.classList.remove('active'));
 
-  function openWA() {
-    const phone = "6281225047599";
-    const msg = encodeURIComponent("Halo Forisa, saya ingin menjadwalkan konsultasi awal.");
-    window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
-  }
+    const target = link.getAttribute('data-target');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
+document.getElementById("btnKonsultasi").addEventListener("click", function () {
+  const phone = "6281225047599";
+  const message = encodeURIComponent("Halo Forisa, saya ingin menjadwalkan konsultasi awal.");
+  window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+});
 </script>
 
 </body>
