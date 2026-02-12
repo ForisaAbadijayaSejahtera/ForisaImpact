@@ -1,93 +1,67 @@
-/* RESET DASAR */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(180deg, #eef2f7 0%, #ffffff 70%);
   color: #1f2937;
-  line-height: 1.6;
 }
 
-/* NAVBAR */
 nav {
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.9);
   border-bottom: 1px solid #e5e7eb;
 }
 
-nav .brand {
-  font-weight: 700;
-  font-size: 18px;
-  color: #0f172a;
-}
-
-/* INTRO */
-.intro {
-  padding: 48px 24px 32px;
-  max-width: 960px;
-  margin: auto;
-}
-
-.intro h1 {
-  font-size: 32px;
-  margin-bottom: 12px;
-  color: #0f172a;
-}
-
-.intro p {
-  font-size: 18px;
-  color: #334155;
-}
-
-/* ACCORDION CONTAINER */
-.accordion {
-  max-width: 960px;
-  margin: auto;
-  padding: 0 24px 60px;
-}
-
-/* ACCORDION ITEM */
-.accordion-item {
-  margin-bottom: 16px;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
-}
-
-/* HEADER */
-.accordion-header {
-  width: 100%;
-  padding: 20px 22px;
-  font-size: 18px;
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
   font-weight: 600;
-  text-align: left;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(90deg, #e8edf4, #f8fafc);
   color: #0f172a;
 }
 
-.accordion-header:hover {
-  background: linear-gradient(90deg, #dde4ee, #f1f5f9);
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* CONTENT */
-.accordion-content {
-  display: none; /* KUNCI: JANGAN DIHAPUS */
-  padding: 22px;
-  border-top: 1px solid #e5e7eb;
-  animation: fadeIn 0.25s ease-in-out;
+.page-section {
+  display: none;
+  padding: 48px 24px;
+  max-width: 960px;
+  margin: auto;
 }
 
-.accordion-content.active {
+.page-section.active {
   display: block;
 }
 
-.accordion-content h3 {
-  margin-top: 24px;
-  margin-bottom: 8px;
+h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+h3 {
+  margin-top: 28px;
+  color: #0f172a;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #0f766e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
