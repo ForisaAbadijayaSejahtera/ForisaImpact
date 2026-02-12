@@ -1,50 +1,93 @@
+/* RESET DASAR */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #eef2f7 0%, #ffffff 65%);
+  background: linear-gradient(180deg, #eef2f7 0%, #ffffff 70%);
   color: #1f2937;
+  line-height: 1.6;
 }
 
+/* NAVBAR */
 nav {
-  padding: 16px;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(6px);
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e7eb;
 }
 
-nav a {
-  margin-right: 16px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
+nav .brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
 }
 
-section {
-  padding: 40px 20px;
+/* INTRO */
+.intro {
+  padding: 48px 24px 32px;
   max-width: 960px;
   margin: auto;
 }
 
-h1, h3 {
-  color: #111827;
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #0f172a;
 }
 
-.card {
-  margin: 24px 0;
-  padding: 24px;
-  border-radius: 12px;
+.intro p {
+  font-size: 18px;
+  color: #334155;
+}
+
+/* ACCORDION CONTAINER */
+.accordion {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 24px 60px;
+}
+
+/* ACCORDION ITEM */
+.accordion-item {
+  margin-bottom: 16px;
+  border-radius: 14px;
+  overflow: hidden;
   background: #ffffff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
 }
 
-button {
-  background: #1f3a5f;
-  color: #ffffff;
+/* HEADER */
+.accordion-header {
+  width: 100%;
+  padding: 20px 22px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
   border: none;
-  border-radius: 6px;
-  padding: 10px 16px;
   cursor: pointer;
+  background: linear-gradient(90deg, #e8edf4, #f8fafc);
+  color: #0f172a;
 }
 
-button:hover {
-  opacity: 0.9;
+.accordion-header:hover {
+  background: linear-gradient(90deg, #dde4ee, #f1f5f9);
 }
+
+/* CONTENT */
+.accordion-content {
+  display: none; /* KUNCI: JANGAN DIHAPUS */
+  padding: 22px;
+  border-top: 1px solid #e5e7eb;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.accordion-content h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
