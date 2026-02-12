@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Forisa Impact | Konsultan Manajemen SDM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <h1>Forisa Impact</h1>
+  <p class="tagline">Partner Strategis Manajemen SDM & Leadership Transformation</p>
+</header>
+<section>
+  <h2>Konsultasi Awal</h2>
+  <form id="waForm">
+    <input id="nama" placeholder="Nama Anda" required>
+    <input id="perusahaan" placeholder="Nama Perusahaan" required>
+    <input id="jabatan" placeholder="Jabatan" required>
+    <input id="karyawan" placeholder="Jumlah Karyawan" required>
+    <textarea id="masalah" placeholder="Masalah SDM" required></textarea>
+    <button type="submit">Kirim ke WhatsApp</button>
+  </form>
+</section>
+<footer>© 2026 Forisa Impact</footer>
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</body>
+</html>
