@@ -1,22 +1,73 @@
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM READY");
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Forisa Abadijaya Sejahtera</title>
 
-  const btn = document.getElementById("btnKonsultasi");
-  console.log("BTN:", btn);
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  if (!btn) return;
+  <!-- NAV -->
+  <nav>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#layanan">Pelayanan Kami</a>
+    <a href="#konsultasi">Konsultasi Awal</a>
+  </nav>
 
-  btn.addEventListener("click", function () {
-    console.log("BUTTON CLICKED");
+  <!-- TENTANG KAMI -->
+  <section id="tentang">
+    <h1>Tentang Kami</h1>
+    <p>
+      Banyak organisasi tidak kekurangan peluang, tetapi tertahan oleh persoalan
+      manusia dan sistem kerja di dalamnya. PT Forisa Abadijaya Sejahtera hadir
+      untuk membantu organisasi melihat persoalan SDM secara jernih dan menatanya
+      secara realistis.
+    </p>
+  </section>
 
-    const phone = "6281225047599";
-    const message = encodeURIComponent(
-      "Halo Forisa, saya ingin menjadwalkan konsultasi awal."
-    );
+  <!-- LAYANAN -->
+  <section id="layanan">
+    <h1>Pelayanan Kami</h1>
 
-    window.open(
-      `https://wa.me/${phone}?text=${message}`,
-      "_blank"
-    );
-  });
-});
+    <div class="card">
+      <h3>HR Diagnostic</h3>
+      <p>Memetakan kondisi nyata organisasi dan menemukan akar persoalan SDM.</p>
+    </div>
+
+    <div class="card">
+      <h3>HR System Development</h3>
+      <p>Membangun sistem SDM yang rapi, relevan, dan dijalankan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Leadership Coaching</h3>
+      <p>Menguatkan kualitas kepemimpinan agar organisasi bergerak terarah.</p>
+    </div>
+
+    <div class="card">
+      <h3>HR Retainer / Pendampingan</h3>
+      <p>Menjaga keberlanjutan sistem dan arah organisasi.</p>
+    </div>
+  </section>
+
+  <!-- KONSULTASI -->
+  <section id="konsultasi">
+    <h1>Konsultasi Awal</h1>
+    <p>
+      Konsultasi awal bertujuan memahami tantangan dan arah bisnis sebelum
+      rekomendasi diberikan.
+    </p>
+
+    <!-- INI YANG PENTING -->
+    <button id="btnKonsultasi">
+      Ajukan Konsultasi
+    </button>
+  </section>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
