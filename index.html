@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Forisa Abadijaya Sejahtera</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card { margin: 20px 0; padding: 20px; border-radius: 8px; background: #f9f9f9; }
+    .btn { margin-top: 10px; padding: 8px 14px; cursor: pointer; }
+    .detail { display: none; margin-top: 15px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#tentang">Tentang Kami</a>
+  <a href="#layanan">Pelayanan Kami</a>
+  <a href="#konsultasi">Konsultasi Awal</a>
+</nav>
+
+<section id="tentang">
+  <h1>Tentang Kami</h1>
+  <p>
+    Banyak organisasi sebenarnya tidak kekurangan peluang, namun sering tertahan oleh persoalan paling mendasar: manusia dan sistem kerja di dalamnya.
+  </p>
+  <p>
+    PT Forisa Abadijaya Sejahtera hadir sebagai mitra untuk membantu organisasi melihat persoalan SDM secara lebih jernih dan menatanya secara realistis.
+  </p>
+
+  <button class="btn" onclick="toggle('tentangDetail')">Baca selengkapnya</button>
+
+  <div id="tentangDetail" class="detail">
+    <p>
+      Berangkat dari pengalaman panjang di dunia outsourcing, kami melihat pola yang berulang pada banyak perusahaan kecil dan menengah: potensi besar yang tertahan karena pembenahan SDM terasa rumit dan membingungkan.
+    </p>
+    <p>
+      Berdiri sejak 2022, kami tidak datang membawa teori semata, tetapi pendekatan praktis tentang bagaimana struktur, peran, dan sistem SDM dapat benar-benar mendukung pertumbuhan bisnis.
+    </p>
+    <p>
+      Kami percaya, organisasi bertumbuh lebih cepat ketika manusia, struktur, dan arah bisnis berjalan selaras.
+    </p>
+  </div>
+</section>
+
+<section id="layanan">
+  <h1>Pelayanan Kami</h1>
+  <p>
+    Layanan kami dirancang mengikuti alur yang sehat: membantu perusahaan melihat kondisi secara objektif, menata dengan tepat, lalu menjaga keberlanjutannya.
+  </p>
+
+  <div class="card">
+    <h3>HR Diagnostic</h3>
+    <p>Memetakan kondisi nyata organisasi dan menemukan akar persoalan SDM.</p>
+    <button class="btn" onclick="toggle('hrd')">Detail layanan</button>
+    <div id="hrd" class="detail">
+      <p>
+        Kami menganalisis struktur, peran, alur kerja, budaya, dan kebijakan SDM untuk menghasilkan gambaran utuh beserta rekomendasi yang bisa langsung dijalankan.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>HR System Development</h3>
+    <p>Membangun sistem SDM yang rapi, relevan, dan digunakan sehari-hari.</p>
+    <button class="btn" onclick="toggle('hrs')">Detail layanan</button>
+    <div id="hrs" class="detail">
+      <p>
+        Meliputi struktur organisasi, SOP, rekrutmen, manajemen kinerja, hingga kebijakan SDM yang terukur dan mudah dijalankan.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Leadership Coaching</h3>
+    <p>Menguatkan peran pemimpin agar organisasi bergerak lebih tenang dan terarah.</p>
+    <button class="btn" onclick="toggle('lead')">Detail layanan</button>
+    <div id="lead" class="detail">
+      <p>
+        Pendekatan praktis dan reflektif untuk membantu pemimpin mengambil keputusan dan mengelola tim secara efektif.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>HR Retainer / Pendampingan</h3>
+    <p>Menjaga sistem dan arah organisasi tetap konsisten.</p>
+    <button class="btn" onclick="toggle('ret')">Detail layanan</button>
+    <div id="ret" class="detail">
+      <p>
+        Kami berjalan bersama manajemen untuk memastikan perubahan benar-benar bertahan dan berkembang.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="konsultasi">
+  <h1>Konsultasi Awal</h1>
+  <p>
+    Konsultasi awal membantu kami memahami tantangan dan arah bisnis Anda sebelum memberikan rekomendasi yang tepat.
+  </p>
+  <button onclick="alert('Silakan hubungi kami untuk menjadwalkan konsultasi awal')">
+    Ajukan Konsultasi
+  </button>
+</section>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
