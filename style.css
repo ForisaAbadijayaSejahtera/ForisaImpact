@@ -5,51 +5,79 @@ body {
   color: #1f2937;
 }
 
-nav {
-  padding: 16px 24px;
-  background: rgba(255,255,255,0.9);
+/* HEADER */
+.header {
+  background: rgba(255,255,255,0.95);
   border-bottom: 1px solid #e5e7eb;
 }
 
-nav a {
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
   margin-right: 20px;
+}
+
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.header-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* NAV */
+.nav {
+  text-align: center;
+  padding: 14px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav a {
+  margin: 0 16px;
   text-decoration: none;
   font-weight: 600;
   color: #0f172a;
 }
 
-nav a:hover {
+.nav a:hover {
   text-decoration: underline;
 }
 
+/* CONTENT */
 .page-section {
   display: none;
-  padding: 48px 24px;
   max-width: 960px;
   margin: auto;
+  padding: 48px 24px;
 }
 
 .page-section.active {
   display: block;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 16px;
-  color: #0f172a;
-}
-
-h3 {
-  margin-top: 28px;
-  color: #0f172a;
-}
-
 p {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
-  margin-bottom: 14px;
 }
 
+/* BUTTON */
 button {
   margin-top: 20px;
   padding: 12px 20px;
@@ -66,43 +94,10 @@ button:hover {
   opacity: 0.9;
 }
 
-/* ===== HEADER BRANDING FORISA ===== */
-.brand-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 24px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.brand-header img {
-  height: 60px;
-  width: auto;
-}
-
-.brand-text {
+/* FOOTER */
+.footer {
   text-align: center;
-  flex: 1;
-}
-
-.brand-text h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-.brand-text p {
-  margin: 4px 0 0;
-  font-size: 15px;
-  color: #475569;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  margin-top: 80px;
-  padding: 24px;
-  text-align: center;
-  font-size: 14px;
+  padding: 20px;
+  font-size: 13px;
   color: #64748b;
-  border-top: 1px solid #e5e7eb;
 }
