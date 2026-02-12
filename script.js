@@ -6,7 +6,15 @@ function showSection(id) {
   });
 
   const target = document.getElementById(id);
-  if (target) {
-    target.classList.add("active");
+  if (!target) {
+    console.error("Section tidak ditemukan:", id);
+    return;
   }
+
+  target.classList.add("active");
 }
+
+// default page
+document.addEventListener("DOMContentLoaded", function () {
+  showSection("about");
+});
