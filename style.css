@@ -5,9 +5,8 @@ body {
   color: #1f2937;
 }
 
-/* HEADER */
 .header {
-  background: rgba(255,255,255,0.95);
+  background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -21,7 +20,6 @@ body {
 
 .logo {
   height: 60px;
-  margin-right: 20px;
 }
 
 .header-text {
@@ -36,12 +34,11 @@ body {
 }
 
 .header-text p {
-  margin: 4px 0 0;
+  margin-top: 4px;
   font-size: 14px;
   color: #475569;
 }
 
-/* NAV */
 .nav {
   text-align: center;
   padding: 14px;
@@ -50,9 +47,9 @@ body {
 }
 
 .nav a {
-  margin: 0 16px;
-  text-decoration: none;
+  margin: 0 14px;
   font-weight: 600;
+  text-decoration: none;
   color: #0f172a;
 }
 
@@ -60,41 +57,30 @@ body {
   text-decoration: underline;
 }
 
-/* CONTENT */
-.page-section {
-  display: none;
+.section {
   max-width: 960px;
   margin: auto;
-  padding: 48px 24px;
+  padding: 60px 24px;
 }
 
-.page-section.active {
-  display: block;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-/* BUTTON */
-button {
+.btn, button {
+  display: inline-block;
   margin-top: 20px;
   padding: 12px 20px;
   background: #0f766e;
-  color: #ffffff;
-  border: none;
+  color: white;
   border-radius: 8px;
-  font-size: 15px;
+  text-decoration: none;
+  border: none;
   font-weight: 600;
   cursor: pointer;
 }
 
+.btn:hover,
 button:hover {
   opacity: 0.9;
 }
 
-/* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
