@@ -65,3 +65,44 @@ button {
 button:hover {
   opacity: 0.9;
 }
+
+/* ===== HEADER BRANDING FORISA ===== */
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.brand-header img {
+  height: 60px;
+  width: auto;
+}
+
+.brand-text {
+  text-align: center;
+  flex: 1;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.brand-text p {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #475569;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 80px;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+  border-top: 1px solid #e5e7eb;
+}
