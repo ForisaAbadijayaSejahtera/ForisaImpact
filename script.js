@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ACCORDION
-  const headers = document.querySelectorAll(".accordion-header");
+  const links = document.querySelectorAll("nav a");
+  const sections = document.querySelectorAll(".page-section");
 
-  headers.forEach(header => {
-    header.addEventListener("click", function () {
-      const content = this.nextElementSibling;
-      content.classList.toggle("active");
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const target = this.dataset.target;
+
+      sections.forEach(sec => sec.classList.remove("active"));
+
+      document.getElementById(target).classList.add("active");
     });
   });
 
-  // WHATSAPP
   const btn = document.getElementById("btnKonsultasi");
 
   if (btn) {
@@ -19,11 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const message = encodeURIComponent(
         "Halo Forisa, saya ingin menjadwalkan konsultasi awal."
       );
-
-      window.open(
-        `https://wa.me/${phone}?text=${message}`,
-        "_blank"
-      );
+      window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
     });
   }
 
