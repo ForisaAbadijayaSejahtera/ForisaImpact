@@ -1,100 +1,83 @@
-/* RESET DASAR */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #eef2f7 0%, #ffffff 70%);
+  background: #f5f7fb;
   color: #1f2937;
 }
 
-/* HEADER */
-.header {
-  background: #ffffff;
+header {
+  background: white;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .header-inner {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
   display: flex;
   align-items: center;
+  padding: 20px 32px;
 }
 
 .logo {
-  height: 60px;
+  width: 70px;
+  margin-right: 20px;
 }
 
-.header-center {
-  flex: 1;
-  text-align: center;
-}
-
-.header-center h1 {
+.brand h1 {
   margin: 0;
-  font-size: 24px;
-  color: #0f172a;
+  font-size: 22px;
 }
 
-.header-center p {
-  margin-top: 6px;
+.brand p {
+  margin: 4px 0 0;
   font-size: 14px;
-  color: #475569;
+  color: #64748b;
 }
 
-/* NAVIGASI VERTIKAL */
-.nav-vertical {
-  max-width: 960px;
-  margin: 32px auto;
-  padding: 0 24px;
+nav {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 24px;
+  padding: 12px 32px;
+  background: #f8fafc;
 }
 
-.nav-vertical a {
-  font-size: 16px;
+nav a {
+  text-decoration: none;
   font-weight: 600;
   color: #0f172a;
-  text-decoration: none;
 }
 
-.nav-vertical a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: #0f766e;
 }
 
-/* KONTEN */
-.section {
+main {
   max-width: 960px;
   margin: auto;
-  padding: 56px 24px;
+  padding: 40px 20px;
 }
 
-.section h2 {
-  margin-bottom: 16px;
-  color: #0f172a;
+section {
+  background: white;
+  padding: 32px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-.section p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 14px;
+h2 {
+  margin-top: 0;
 }
 
-/* SECTION YANG TIDAK DITAMPILKAN DI AWAL */
-.section-muted {
-  margin-top: 140px;
-  padding-top: 48px;
-  border-top: 1px solid #e5e7eb;
+ul {
+  padding-left: 20px;
 }
 
-/* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 24px;
-  padding: 12px 22px;
+  margin-top: 16px;
+  padding: 12px 20px;
   background: #0f766e;
-  color: #ffffff;
-  border-radius: 8px;
+  color: white;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
 }
@@ -103,8 +86,7 @@ body {
   opacity: 0.9;
 }
 
-/* FOOTER */
-.footer {
+footer {
   text-align: center;
   padding: 24px;
   font-size: 13px;
