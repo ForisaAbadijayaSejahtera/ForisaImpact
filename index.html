@@ -751,6 +751,292 @@
             gap: 0.5rem;
         }
 
+        /* White Paper Section - NEW */
+        .white-paper {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--soft-cream) 0%, #fff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .white-paper::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(201, 169, 98, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .white-paper::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(15, 23, 42, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .white-paper .section-header h2 {
+            color: var(--deep-navy);
+        }
+
+        .white-paper .section-header p {
+            color: var(--text-gray);
+        }
+
+        .white-paper-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .white-paper-card {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--light-gray);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .white-paper-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--primary-gold-dark));
+        }
+
+        .white-paper-preview {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .white-paper-cover {
+            width: 100%;
+            height: 380px;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--navy-light) 100%);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .white-paper-cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .white-paper-badge {
+            background: var(--primary-gold);
+            color: var(--deep-navy);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .white-paper-cover h4 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            position: relative;
+            z-index: 1;
+        }
+
+        .white-paper-cover .subtitle {
+            font-size: 0.9rem;
+            color: var(--primary-gold);
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .white-paper-cover .year {
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            bottom: 1rem;
+            right: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .white-paper-decoration {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgba(201, 169, 98, 0.2);
+            border-radius: 50%;
+            top: -30px;
+            right: -30px;
+        }
+
+        .white-paper-content h3 {
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .white-paper-content .lead {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .white-paper-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: start;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: var(--soft-cream);
+            border-radius: 12px;
+            border-left: 3px solid var(--primary-gold);
+        }
+
+        .highlight-icon {
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+
+        .highlight-text {
+            font-size: 0.9rem;
+            color: var(--deep-navy);
+            font-weight: 500;
+        }
+
+        .white-paper-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+            border-top: 1px solid var(--light-gray);
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .meta-item i {
+            color: var(--primary-gold);
+        }
+
+        .download-section {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--navy-light) 100%);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.2);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-download::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-download:hover::before {
+            left: 100%;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.3);
+        }
+
+        .btn-download i {
+            font-size: 1.2rem;
+        }
+
+        .download-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .file-size {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        .file-format {
+            font-size: 0.75rem;
+            color: var(--primary-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         /* Contact Section */
         .contact {
             padding: 6rem 0;
@@ -942,6 +1228,24 @@
             .contact-grid {
                 grid-template-columns: 1fr;
             }
+
+            .white-paper-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .white-paper-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .white-paper-meta {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .download-section {
+                justify-content: center;
+            }
         }
 
         @media (max-width: 768px) {
@@ -964,6 +1268,14 @@
             .about-features {
                 grid-template-columns: 1fr;
             }
+
+            .white-paper-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .white-paper-cover {
+                height: 300px;
+            }
         }
 
         /* Animations */
@@ -976,6 +1288,27 @@
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        /* Pulse animation for download button */
+        @keyframes pulse-gold {
+            0% {
+                box-shadow: 0 0 0 0 rgba(201, 169, 98, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(201, 169, 98, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(201, 169, 98, 0);
+            }
+        }
+
+        .btn-download {
+            animation: pulse-gold 2s infinite;
+        }
+
+        .btn-download:hover {
+            animation: none;
         }
     </style>
 </head>
@@ -996,6 +1329,7 @@
             <ul class="nav-links">
                 <li><a href="#tentang">Tentang</a></li>
                 <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#whitepaper">White Paper</a></li>
                 <li><a href="#compro">Company Profile</a></li>
                 <li><a href="#kontak">Kontak</a></li>
                 <!-- Badge Afiliasi ke ISLA -->
@@ -1045,9 +1379,9 @@
                         <i class="fab fa-whatsapp"></i>
                         Konsultasi Gratis
                     </a>
-                    <a href="#compro" class="btn-secondary">
-                        <i class="fas fa-download"></i>
-                        Download Compro
+                    <a href="#whitepaper" class="btn-secondary">
+                        <i class="fas fa-file-alt"></i>
+                        White Paper
                     </a>
                 </div>
             </div>
@@ -1245,6 +1579,84 @@
         </div>
     </section>
 
+    <!-- White Paper Section - NEW -->
+    <section class="white-paper" id="whitepaper">
+        <div class="section-container">
+            <div class="section-header fade-in" style="margin-bottom: 3rem;">
+                <h2>White Paper</h2>
+                <p>Wawasan mendalam tentang arsitektur kepemimpinan dan transformasi SDM</p>
+            </div>
+
+            <div class="white-paper-container">
+                <div class="white-paper-card fade-in">
+                    <div class="white-paper-preview">
+                        <div class="white-paper-cover">
+                            <div class="white-paper-badge">Exclusive</div>
+                            <h4>Integrated Strategic Leadership Architecture</h4>
+                            <div class="subtitle">Framework White Paper 2026</div>
+                            <div class="year">2026</div>
+                        </div>
+                        <div class="white-paper-decoration"></div>
+                    </div>
+
+                    <div class="white-paper-content">
+                        <h3>ISLA™ Framework White Paper</h3>
+                        <p class="lead">
+                            Dokumen komprehensif yang memaparkan fondasi teoretis, metodologi implementasi, 
+                            dan studi kasus penggunaan ISLA™ Framework dalam transformasi kepemimpinan 
+                            dan pengembangan SDM organisasi modern.
+                        </p>
+
+                        <div class="white-paper-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle highlight-icon"></i>
+                                <span class="highlight-text">3 Layer Architecture Deep Dive</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle highlight-icon"></i>
+                                <span class="highlight-text">Implementation Roadmap</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle highlight-icon"></i>
+                                <span class="highlight-text">AI Integration Strategies</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle highlight-icon"></i>
+                                <span class="highlight-text">Success Metrics & KPIs</span>
+                            </div>
+                        </div>
+
+                        <div class="white-paper-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>42 Halaman</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-language"></i>
+                                <span>Bahasa Indonesia</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Edisi 2026</span>
+                            </div>
+                        </div>
+
+                        <div class="download-section">
+                            <a href="White Paper ISLA Framework.pdf" class="btn-download" download>
+                                <i class="fas fa-download"></i>
+                                Download White Paper
+                            </a>
+                            <div class="download-info">
+                                <span class="file-size">PDF • 3.2 MB</span>
+                                <span class="file-format">Gratis Download</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Company Profile Section -->
     <section class="company-profile" id="compro">
         <div class="section-container">
@@ -1336,6 +1748,7 @@
             <ul class="footer-links">
                 <li><a href="#tentang">Tentang</a></li>
                 <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#whitepaper">White Paper</a></li>
                 <li><a href="#compro">Company Profile</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
