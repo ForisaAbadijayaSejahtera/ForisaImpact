@@ -413,13 +413,19 @@
         }
 
         .about-visual {
-            position: relative;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
 
-        .about-image {
-    width: 225px;
-    height: 225px;
-    margin: 0 auto;
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1/1;
     background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
     border-radius: 20px;
     display: flex;
@@ -431,9 +437,9 @@
 }
 
 .about-image img {
-    width: 225px;
-    height: 225px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     border-radius: 20px;
     display: block;
 }
@@ -449,8 +455,8 @@
 
         .experience-badge {
     position: absolute;
-    bottom: -20px;
-    right: -20px;
+    bottom: 0;
+    right: 0;
     background: var(--accent-color);
     color: var(--white);
     padding: 1rem 1.5rem;
@@ -458,6 +464,7 @@
     text-align: center;
     box-shadow: var(--shadow-medium);
     z-index: 2;
+    transform: translate(20%, 20%);
 }
 
         .experience-badge .years {
