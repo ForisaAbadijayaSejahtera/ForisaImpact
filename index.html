@@ -503,6 +503,23 @@
             transform: scaleX(1);
         }
 
+        .service-card.highlighted {
+    border: 2px solid var(--accent-color);
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-medium);
+}
+
+.service-card.highlighted::before {
+    transform: scaleX(1);
+}
+
+.service-card.highlighted .service-icon {
+    background: var(--primary-color);
+}
+
+.service-card.highlighted .service-icon i {
+    color: var(--white);
+}
         .service-icon {
             width: 70px;
             height: 70px;
@@ -1086,7 +1103,7 @@
             </div>
             
             <div class="services-grid">
-                <div class="service-card animate-on-scroll">
+                <div class="service-card animate-on-scroll" id="service-diagnostic">>
                     <div class="service-icon">
                         <i class="fas fa-stethoscope"></i>
                     </div>
@@ -1097,7 +1114,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card animate-on-scroll">
+                <div class="service-card animate-on-scroll" id="service-sop">
                     <div class="service-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
@@ -1108,7 +1125,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card animate-on-scroll">
+                <div class="service-card animate-on-scroll" id="service-consulting">
                     <div class="service-icon">
                         <i class="fas fa-users-cog"></i>
                     </div>
@@ -1119,7 +1136,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card animate-on-scroll">
+                <div class="service-card animate-on-scroll" id="service-retainer">
                     <div class="service-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
@@ -1325,14 +1342,14 @@
             </div>
             
             <div class="footer-links">
-                <h4>Layanan</h4>
-                <ul>
-                    <li><a href="#">HR Diagnostic</a></li>
-                    <li><a href="#">SOP Development</a></li>
-                    <li><a href="#">HR Consulting</a></li>
-                    <li><a href="#">HR Retainer</a></li>
-                </ul>
-            </div>
+    <h4>Layanan Kami</h4>
+    <ul>
+        <li><a onclick="scrollToService('service-diagnostic')">HR Diagnostic</a></li>
+        <li><a onclick="scrollToService('service-sop')">SOP Development</a></li>
+        <li><a onclick="scrollToService('service-consulting')">HR Consulting</a></li>
+        <li><a onclick="scrollToService('service-retainer')">HR Retainer</a></li>
+    </ul>
+</div>
         </div>
         
         <div class="footer-bottom">
@@ -1392,7 +1409,35 @@
             e.preventDefault();
             alert('Terima kasih! Pesan Anda telah terkirim. Tim kami akan menghubungi Anda segera.');
             this.reset();
+        });    
+
+        // Scroll to specific service and highlight it
+function scrollToService(serviceId) {
+    const element = document.getElementById(serviceId);
+    if (element) {
+        // Scroll to element
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
         });
+        
+        // Remove highlight from all cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.classList.remove('highlighted');
+        });
+        
+        // Add highlight to target card
+        setTimeout(() => {
+            element.classList.add('highlighted');
+            
+            // Remove highlight after 3 seconds
+            setTimeout(() => {
+                element.classList.remove('highlighted');
+            }, 3000);
+        }, 800);
+    }
+}
+        
     </script>
 
 </body>
